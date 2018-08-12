@@ -85,7 +85,7 @@ input {
         background-size: contain;
       }
    
-      body {
-        background: url(/assets/img/woodback.jpg);
+      .westBack {
+        background: url(/src/assets/img/woodback.jpg);
           
     }
