@@ -2,5 +2,6 @@
  
 .body {
     background: url("/assets/img/woodback.jpg");
+    background-size: 100% 250px;
       
 }

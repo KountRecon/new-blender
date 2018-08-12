@@ -13,11 +13,17 @@
 @import url(https://fonts.googleapis.com/css?family=Ultra);
 
 
-.BackImage {
+/* .BackImage {
     height:40em; background-size:cover; width:auto;
     background-image:url('/assets/img/woodback.jpg');
     background-position:50% 50%;
-  }
+  } */
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 .west * {
   font-family: "Ultra";
@@ -68,7 +74,7 @@
 
     .west {
         border-radius: 2px;
-        width: 340px;
+        width: 440px;
         margin: 20px auto;
         padding: 20px;
         text-align: center;
