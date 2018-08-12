@@ -12,6 +12,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ewert);
 @import url(https://fonts.googleapis.com/css?family=Ultra);
 
+
 input {
   display: block;
   margin: 5px;
@@ -85,3 +86,8 @@ input {
         background-size: contain;
       }
   
+.BackImage {
+    height:40em; background-size:cover; width:auto;
+    background-image:url('/src/assets/img/woodback.jpg');
+    background-position:50% 50%;
+  }
