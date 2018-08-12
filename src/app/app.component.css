@@ -14,18 +14,15 @@
 
 
 .BackImage {
-    height:40em; background-size:cover; width:auto;
+    background-size:auto;
     background-image:url('/assets/img/woodback.jpg');
-    background-position:50% 50%;
-    background-repeat: repeat-y;
-
   }
 
-  .center{
+  .ladyveneno{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 150px;
+    
     }
 
 .west * {
