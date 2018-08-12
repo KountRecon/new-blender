@@ -13,12 +13,11 @@
 @import url(https://fonts.googleapis.com/css?family=Ultra);
 
 
-input {
-  display: block;
-  margin: 5px;
-  width: 100px;
-  margin: 0 auto;
-}
+.BackImage {
+    height:40em; background-size:cover; width:auto;
+    background-image:url('/src/assets/img/woodback.jpg');
+    background-position:50% 50%;
+  }
 
 .west * {
   font-family: "Ultra";
@@ -86,8 +85,3 @@ input {
         background-size: contain;
       }
   
-.BackImage {
-    height:40em; background-size:cover; width:auto;
-    background-image:url('/src/assets/img/woodback.jpg');
-    background-position:50% 50%;
-  }
