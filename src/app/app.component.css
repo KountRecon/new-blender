@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Ewert);
+@import url(https://fonts.googleapis.com/css?family=Ultra);
+
 .footer {
     position: fixed;
     left: 0;
@@ -8,10 +11,6 @@
     color: white;
     text-align: center;
 }
-
-@import url(https://fonts.googleapis.com/css?family=Ewert);
-@import url(https://fonts.googleapis.com/css?family=Ultra);
-
 
 .BackImage {
     background-size:auto;
