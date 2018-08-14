@@ -7,14 +7,20 @@ import { AngularFireDatabase } from 'angularfire2/database';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pistas:any[];
+  colores:any[];
+  perros:any[]=[
+    {"name":"comecaca"},
+    {"name":"pecholobo"},
+    {"name":"carapanoa"},
+];
   constructor(db: AngularFireDatabase){
-   
-  db.list('/tracks/pistas/pista/').valueChanges().subscribe(pistas=>{
-    this.pistas = pistas;
+  db.list('/pistas').valueChanges().subscribe(colores=>{
+    this.colores = colores;
     //tambien muestro por consola mensaje
-    console.log(this.pistas);
+    console.log(this.colores);
     console.log('valor cambia');})
   }
+
   title = ' Wanted !';
+  myHero = 'Dada Dat Field';
 }
