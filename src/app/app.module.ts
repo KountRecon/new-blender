@@ -4,14 +4,19 @@ import { AppComponent } from './app.component';
 import{AngularFireModule}from 'angularfire2';
 import{AngularFireDatabaseModule}from 'angularfire2/database';
 import { environment } from 'src/environments/environment';
+import { PostsComponent } from './posts/posts.component';
+import { HttpClientModule } from '@angular/common/http';
 //importo enviromen para que funcione la variable environment
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostsComponent,
+
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],
