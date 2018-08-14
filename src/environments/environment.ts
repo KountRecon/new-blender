@@ -25,7 +25,15 @@ export const environment = {
   "karma-jasmine-html-reporter": "^0.2.2",
   "protractor": "~5.3.0",
   "ts-node": "~5.0.1",
-  "tslint": "~5.9.1"
+  "tslint": "~5.9.1",
+  firebase: {
+    apiKey: "AIzaSyDMCqfTi5UulC4ES9b3OJuwsTL5dX86mCU",
+    authDomain: "theprovidence-54a7f.firebaseapp.com",
+    databaseURL: "https://theprovidence-54a7f.firebaseio.com",
+    projectId: "theprovidence-54a7f",
+    storageBucket: "theprovidence-54a7f.appspot.com",
+    messagingSenderId: "405194601816"
+    }
 };
 
 /*
