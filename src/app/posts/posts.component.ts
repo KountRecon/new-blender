@@ -22,6 +22,8 @@ private _url: string ="/assets/data/employees.json";
   constructor(private _postmanPatchService: PostManPatchService) { }
   // como subscirbirse a un Observable
   // *****************************************
+
+  //onInit is a Life-cyle hook
   ngOnInit(): void {
   
    this._postmanPatchService.getEmployees()
