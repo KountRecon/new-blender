@@ -1,3 +1,12 @@
 <p>
   posts works!
 </p>
+
+  <ul *ngFor="let employee of employees" >
+    <li  >{{employee.name}} age:{{employee.age}}</li>
+  </ul>
+
+
+  <ul>
+      <li  *ngFor="let post of posts"  >{{post.$value}}</li>
+    </ul>

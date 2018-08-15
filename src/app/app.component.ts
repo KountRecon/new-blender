@@ -23,4 +23,8 @@ export class AppComponent {
 
   title = ' Wanted !';
   myHero = 'Dada Dat Field';
+
+  getTrabajadores(){
+    
+  }
 }
