@@ -1,0 +1,27 @@
+<div>
+  google-map works!
+ 
+
+  <ul *ngFor="let user of user | async"> 
+    <li>{{user | json| uppercase}}</li>
+    </ul>
+  </div>   
+
+<div>
+  <agm-map [latitude]= "lat" [longitude]= "lng" >
+
+    <agm-marker *ngFor="let Location of Locations | async" [latitude]= "lat" [longitude]= "lng">
+
+     <agm-info-window>
+       <h3> <strong> Howdy!</strong>
+
+       </h3>
+       
+       <p>You are very lost></p>
+     </agm-info-window>
+
+    </agm-marker>
+
+  </agm-map>
+
+</div>

@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Ewert);
 @import url(https://fonts.googleapis.com/css?family=Ultra);
-
+/* 
 .footer {
     position: fixed;
     left: 0;
@@ -10,20 +10,20 @@
     background-color: rgba(255, 0, 0, 0.685);
     color: white;
     text-align: center;
-}
+} */
 
-.BackImage {
+/* .BackImage {
     background-size:auto;
     background-image:url('/assets/img/woodback.jpg');
-  }
-
+  } */
+/* 
   .ladyveneno{
     display: block;
     margin-left: auto;
     margin-right: auto;
     
-    }
-
+    } */
+/* 
 .west * {
   font-family: "Ultra";
   color: rgb(82, 42, 10);
@@ -73,7 +73,7 @@
 
     .west {
         border-radius: 2px;
-        width: 440px;
+        width: 622px;
         margin: 20px auto;
         padding: 20px;
         text-align: center;
@@ -89,4 +89,4 @@
         background-position: 50% 50%;
         background-size: contain;
       }
-  
+   */

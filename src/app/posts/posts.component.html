@@ -2,11 +2,19 @@
   posts works!
 </p>
 
-  <ul *ngFor="let employee of employees" >
+  <!-- <ul *ngFor="let employee of employees" >
     <li  >{{employee.name}} age:{{employee.age}}</li>
-  </ul>
+  </ul> -->
 
-
+<!-- 
   <ul>
       <li  *ngFor="let post of posts"  >{{post.title}}</li>
+    </ul> -->
+
+    <ul *ngFor="let user of users | async"> 
+    <li>{{user | json| uppercase}}</li>
     </ul>
+  
+    <!-- <input #box (keyup)="newUser"> -->
+    <input [(ngModel)]="newUser" >
+    <button mat-button (click)="updateUser()"></button>

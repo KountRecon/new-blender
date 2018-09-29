@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "^1.0.0-beta.3",
     "@angular/animations": "^6.1.0",
     "@angular/cli": "~6.1.3",
     "@angular/common": "^6.1.0",
@@ -27,7 +28,9 @@
     "core-js": "^2.5.4",
     "express": "^4.16.3",
     "firebase": "^5.3.1",
-    "rxjs": "^6.0.0",
+    "geofire": "^4.1.2",
+    "rxjs": "^6.3.3",
+    "rxjs-compat": "^6.3.3",
     "save": "^2.3.2",
     "typescript": "~2.7.2",
     "zone.js": "~0.8.26"
