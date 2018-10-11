@@ -1,24 +1,49 @@
 <div>
   google-map works!
- 
 
-  <ul *ngFor="let user of user | async"> 
-    <li>{{user | json| uppercase}}</li>
-    </ul>
-  </div>   
+  <ul *ngFor="let point of points | async" >
+    <li>{{point.name | json }}</li>
+  </ul>
+</div>
 
 <div>
-  <agm-map [latitude]= "lat" [longitude]= "lng" >
+  <p>cambiar radio</p>
 
-    <agm-marker *ngFor="let Location of Locations | async" [latitude]= "lat" [longitude]= "lng">
+  <mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  tickInterval="1"
+  min="1"
+  max="100"
+  >
+</mat-slider>
 
-     <agm-info-window>
-       <h3> <strong> Howdy!</strong>
+</div>
 
-       </h3>
-       
-       <p>You are very lost></p>
-     </agm-info-window>
+<br>
+<div>
+  <agm-map [latitude]="center.latitude" [longitude]="center.longitude" [zoom]="8">
+
+    <agm-marker 
+    *ngFor="let point of points | async; trackBy: trackByFn" 
+    [latitude]="point.gps.latitude" 
+    [longitude]="point.gps.longitude">
+
+      <agm-info-window>
+        <h6> <strong> Howdy!</strong> </h6>
+        <ul>
+          <li>name:{{point.name}}</li>
+          <li>email:{{point.email}}</li>
+          <li>uid:{{point.id}}</li>
+          <li>geohash:{{point.pos.geohash}}</li>
+          <li>lat: {{point.latitude}}</li>
+          <li>lon: {{point.longitude}}</li>
+        </ul>
+        <p>Distance:
+          {{point.queryMetadata |json }}
+        </p>
+
+      </agm-info-window>
 
     </agm-marker>
 

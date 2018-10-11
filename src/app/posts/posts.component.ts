@@ -29,13 +29,13 @@ export class PostsComponent  implements OnInit {
 
 // *************************************************************************
 // declaro variable de tipo collection firestore (donde recibo los datos)
-  usersCollection: AngularFirestoreCollection<User>;
+  usersCollection: AngularFirestoreCollection <User>;
 
-// Declario segunda varible de tipo Observable que va contener un array de notas
+// Declaro una segunda varible de tipo Observable que va contener un array de usuarios
 users: Observable <User[]> ; // para guardar toda la collecion en un array de usuarios
 user: Observable <User>; // para guardar un solo usuario
 newUser: string;
-userDoc: AngularFirestoreDocument<User>;
+userDoc: AngularFirestoreDocument <User>;
 
 public employees = [];
 public posts = [];
@@ -50,8 +50,8 @@ private _url: '/assets/data/employees.json';
    this._postmanPatchService.getEmployees()
    .subscribe(data => this.employees = data);
 
-   this._postmanPatchService.getPosts()
-   .subscribe(data => this.posts = data).toString();
+  //  this._postmanPatchService.getPosts()
+  //  .subscribe(data => this.posts = data).toString();
 
    function stringify(x) {
      console.log(this.posts.toString());
@@ -62,8 +62,8 @@ private _url: '/assets/data/employees.json';
     // this.user = this.userDoc.valueChanges();
 
     // funciones para mostrar la colletion  de usuario
-    // this.usersCollection = this._angularFirestore.collection('users');
-    // this.users = this.usersCollection.valueChanges();
+    this.usersCollection = this._angularFirestore.collection('users');
+    this.users = this.usersCollection.valueChanges();
     // this.usersCollection = this._angularFirestore.collection('users', ref => {
     //   return ref.orderBy('name', 'asc');
     // });

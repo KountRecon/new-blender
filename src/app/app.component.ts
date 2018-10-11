@@ -7,14 +7,10 @@ import { AngularFireDatabase } from 'angularfire2/database';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  colores:any[];
-  perros:any[] =[
-    {"name":"comecaca"},
-    {"name":"pecholobo"},
-    {"name":"carapanoa"},
-];
-  constructor(db: AngularFireDatabase){
-  db.list('/pistas').valueChanges().subscribe(colores=>{
+  colores: any[];
+
+  constructor(db: AngularFireDatabase) {
+  db.list('/pistas').valueChanges().subscribe(colores => {
     this.colores = colores;
     // tambien muestro por consola mensaje
     console.log(this.colores);

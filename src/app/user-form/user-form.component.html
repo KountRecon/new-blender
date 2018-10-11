@@ -1,0 +1,35 @@
+<p>
+    user-form works!
+</p>
+<form [formGroup]="userForm">
+
+    <!-- Value: {{ userForm.value | json }} -->
+
+    <hr>
+    <!-- <mat-form-field >
+        <input matInput placeholder="User Id" formControlName="uid">
+    </mat-form-field> -->
+    <mat-form-field >
+        <input matInput placeholder="nombre" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="email" formControlName="email">
+    </mat-form-field>
+<!-- 
+    <mat-form-field>
+        <input matInput placeholder="latitude" formControlName="latitude">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="longitude" formControlName="longitude">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="geohash" formControlName="geohash">
+    </mat-form-field>
+ -->
+
+    <button mat-raised-button color="primary"> hi im a Button</button>
+
+</form>
