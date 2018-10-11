@@ -1,7 +1,6 @@
 import { Location } from './location';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IEmployee } from './employee';
 import { Observable } from 'rxjs';
 import { AngularFirestore, AngularFirestoreDocument, AngularFirestoreCollection} from 'angularfire2/firestore';
 
