@@ -29,10 +29,10 @@ private _urlEmployees = '/assets/data/employees.json';
 getPosts() {
   return this.http.get<any[]>(this._url);
   }
-  getEmployees(): Observable <IEmployee[]> {
+  // getEmployees(): Observable <IEmployee[]> {
 
-  return this.http.get<IEmployee[]>(this._urlEmployees);
-  }
+  // return this.http.get<IEmployee[]>(this._urlEmployees);
+  // }
 
   getLocationSingle() {
    return this._angularFirestore.doc('Locations/1');
