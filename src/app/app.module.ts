@@ -1,3 +1,4 @@
+import { AngularFireStorage } from 'angularfire2/storage';
 import { CoreModule } from './core/core.module';
 import { AgmCoreModule } from '@agm/core';
 import { environment } from './../environments/environment';
@@ -18,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
@@ -26,6 +28,12 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { LayoutModule } from '@angular/cdk/layout';
+
 import { UserFormComponent } from './user-form/user-form.component';
 import { DogFormComponent } from './dog-form/dog-form.component';
 import { DbfeedComponent } from './dbfeed/dbfeed.component';
@@ -62,6 +70,11 @@ export const firebaseconfig = environment.firebase;
     MatCheckboxModule,
     MatChipsModule,
     MatSliderModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    LayoutModule,
     AngularFireModule.initializeApp(firebaseconfig),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
